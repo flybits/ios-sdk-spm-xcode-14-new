@@ -5,18 +5,17 @@ import PackageDescription
 let package = Package(
   name: "Flybits",
   products: [
-    .library(name: "Concierge", targets: ["FlybitsSDK", "FlybitsPushSDK", "FlybitsKernelSDK", "FlybitsContextSDK", "FlybitsConciergeSDK"]),
+    .library(name: "Concierge", targets: ["FlybitsCoreConcierge", "FlybitsSDK", "FlybitsPushSDK", "FlybitsKernelSDK", "FlybitsContextSDK", "FlybitsConcierge"]),
     .library(name: "Location", targets: ["FlybitsSDK", "FlybitsContextSDK", "FlybitsContextLocationPluginSDK"]),
     .library(name: "Core", targets: ["FlybitsSDK", "FlybitsPushSDK", "FlybitsKernelSDK", "FlybitsContextSDK"]),
-    .library(name: "SmartRewards", targets: ["FlybitsSDK", "FlybitsPushSDK", "FlybitsKernelSDK", "FlybitsContextSDK", "FlybitsConciergeSDK", "FlybitsSmartRewardsSDK"]),
   ],
   targets: [
-    .binaryTarget(name: "FlybitsSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.8.6/FlybitsSDK.xcframework.zip", checksum: "968423cb99954d903f0f61d2df7a9ed56eeca4ad42218e1d3276ab4805e90bff"),
-    .binaryTarget(name: "FlybitsPushSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.8.6/FlybitsPushSDK.xcframework.zip", checksum: "d94787bd80ccd89d6d4f95c5db2d94bc5d92e87d172ef03247536af551e13127"),
-    .binaryTarget(name: "FlybitsKernelSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.8.6/FlybitsKernelSDK.xcframework.zip", checksum: "069aef8b50b2b279dd0c3a19c0a4adff562dbbff55bb0ce68766dd2ec6130d13"),
-    .binaryTarget(name: "FlybitsContextSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.8.6/FlybitsContextSDK.xcframework.zip", checksum: "6bb3b560c81b221c61a3dbfc426a1869daa9c08f60b535d5a1d41c2dfea33b87"),
-    .binaryTarget(name: "FlybitsConciergeSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.8.6/FlybitsConciergeSDK.xcframework.zip", checksum: "46e288d310bdceecee76ca1faecffc20e66687d99aeaadaeb48008b221ad3eec"),
-    .binaryTarget(name: "FlybitsSmartRewardsSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.8.6/FlybitsSmartRewardsSDK.xcframework.zip", checksum: "4d350c365931ee7aca12c079662180aa2f7fbf58817fb4de4c9f0c46b5adfe17"),
-    .binaryTarget(name: "FlybitsContextLocationPluginSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.8.6/FlybitsContextLocationPluginSDK.xcframework.zip", checksum: "57d4606f4508b4ae3770cd40e45cbc442f2b84b846ac80aa2bbb13fcc71964b4"),
+    .binaryTarget(name: "FlybitsSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.1.0-alpha14/FlybitsSDK.xcframework.zip", checksum: "35ce0c209821f3eb9ef7b89cedb65762dc51c11326e3657beb850211b657ad29"),
+    .binaryTarget(name: "FlybitsPushSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.1.0-alpha14/FlybitsPushSDK.xcframework.zip", checksum: "794e95e0861385cbd2220e6cb048402b6ca778dd0d730936dec181e5982a02b9"),
+    .binaryTarget(name: "FlybitsKernelSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.1.0-alpha14/FlybitsKernelSDK.xcframework.zip", checksum: "a1fe80d2cd1d6b30d8a76803e5b405a4499c43490f9ba805dc2eac79f2928607"),
+    .binaryTarget(name: "FlybitsContextSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.1.0-alpha14/FlybitsContextSDK.xcframework.zip", checksum: "a4ecf539101a55416e1c77e1f1cd1dd2229cf901df60246952fd354a9e12f56a"),
+    .binaryTarget(name: "FlybitsCoreConcierge", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.1.0-alpha14/FlybitsCoreConcierge.xcframework.zip", checksum: "4049f4d31318624ffe4195a78b48e82c2e5f4560b65e9fd4feb0cf8baf6b8c7c"),
+    .binaryTarget(name: "FlybitsConcierge", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.1.0-alpha14/FlybitsConcierge.xcframework.zip", checksum: "0e49dc1e1a7473c566c9e4fcb2ee22fe7997a6c0013ca85e3043cd077fa4dfbe"),
+    .binaryTarget(name: "FlybitsContextLocationPluginSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.1.0-alpha14/FlybitsContextLocationPluginSDK.xcframework.zip", checksum: "4ad4c69a14bd2bd281a1e6a34b2fc9993aadc10b5421fc7580d52f94c64dd4ce"),
   ]
 )
