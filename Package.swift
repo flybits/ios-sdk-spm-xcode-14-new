@@ -5,18 +5,17 @@ import PackageDescription
 let package = Package(
   name: "Flybits",
   products: [
-    .library(name: "Concierge", targets: ["FlybitsSDK", "FlybitsPushSDK", "FlybitsKernelSDK", "FlybitsContextSDK", "FlybitsConciergeSDK"]),
+    .library(name: "Concierge", targets: ["FlybitsCoreConcierge", "FlybitsSDK", "FlybitsPushSDK", "FlybitsKernelSDK", "FlybitsContextSDK", "FlybitsConcierge"]),
     .library(name: "Location", targets: ["FlybitsSDK", "FlybitsContextSDK", "FlybitsContextLocationPluginSDK"]),
     .library(name: "Core", targets: ["FlybitsSDK", "FlybitsPushSDK", "FlybitsKernelSDK", "FlybitsContextSDK"]),
-    .library(name: "SmartRewards", targets: ["FlybitsSDK", "FlybitsPushSDK", "FlybitsKernelSDK", "FlybitsContextSDK", "FlybitsConciergeSDK", "FlybitsSmartRewardsSDK"]),
   ],
   targets: [
-    .binaryTarget(name: "FlybitsSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.9.2/FlybitsSDK.xcframework.zip", checksum: "85594d8f992fe94e1bfc57b6f1062a51324ea41ebc13d29121dc3ca54c74f1a9"),
-    .binaryTarget(name: "FlybitsPushSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.9.2/FlybitsPushSDK.xcframework.zip", checksum: "5d4d8bfb8b16c85d5036dae860603897d0d33829c6eea7e81a30f67d6264e97b"),
-    .binaryTarget(name: "FlybitsKernelSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.9.2/FlybitsKernelSDK.xcframework.zip", checksum: "bccc6fcd73a434da5046dedd3965e877b29fcbc3557cb5e399c3b10265cf3ac1"),
-    .binaryTarget(name: "FlybitsContextSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.9.2/FlybitsContextSDK.xcframework.zip", checksum: "d268b2086a4bd9417558a948ef3c9aa06c336d39944d4b75afeced52ed1f02a7"),
-    .binaryTarget(name: "FlybitsConciergeSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.9.2/FlybitsConciergeSDK.xcframework.zip", checksum: "ef934d2bad8ec850a1b25c112a803f67004f573851ef27f0912d1583b5481fd1"),
-    .binaryTarget(name: "FlybitsSmartRewardsSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.9.2/FlybitsSmartRewardsSDK.xcframework.zip", checksum: "19b2ec11e0658818318ea6b95a068d18939bebc34c595f7b14c4a29ab3f85899"),
-    .binaryTarget(name: "FlybitsContextLocationPluginSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/3.9.2/FlybitsContextLocationPluginSDK.xcframework.zip", checksum: "c2550e7e1381985c883f0891bc962a968e56b02dcf7f3a282825f94e125eaaeb"),
+    .binaryTarget(name: "FlybitsSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.0.12/FlybitsSDK.xcframework.zip", checksum: "d9f843b7b41c45a6282e1dbbc43f41f1ebb388a1685ebd72136b1c53397a612a"),
+    .binaryTarget(name: "FlybitsPushSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.0.12/FlybitsPushSDK.xcframework.zip", checksum: "1ae536ca7be57b712165e578fcde3a7250910ebec9acb9c2c3fc83ef08cc6b3b"),
+    .binaryTarget(name: "FlybitsKernelSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.0.12/FlybitsKernelSDK.xcframework.zip", checksum: "186e275644d3f2ba55abb360d1aabf01201a8181c430bdad73785217bab946e3"),
+    .binaryTarget(name: "FlybitsContextSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.0.12/FlybitsContextSDK.xcframework.zip", checksum: "5f2ee1d9f3f5fad9ff28a6671cf8873c562bd4f0a9172671906e778256a7ea1b"),
+    .binaryTarget(name: "FlybitsCoreConcierge", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.0.12/FlybitsCoreConcierge.xcframework.zip", checksum: "4acefe540e6b0b56cc25eba0bc141f30355447340e27e71c670b3e02a8198e9a"),
+    .binaryTarget(name: "FlybitsConcierge", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.0.12/FlybitsConcierge.xcframework.zip", checksum: "09c757ba50403d5b96be9304cebc00e7ae20da4ffb48d28c70c0e5b76caf7c02"),
+    .binaryTarget(name: "FlybitsContextLocationPluginSDK", url: "https://flybits.jfrog.io/artifactory/SPM-Xcode-14/Flybits/5.0.12/FlybitsContextLocationPluginSDK.xcframework.zip", checksum: "a177b90bc18f99b8984538b48c0444d00677e20918eee6b424687fd475dceb34"),
   ]
 )
